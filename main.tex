@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+
+%###############################################################
+%###############################################################
+%##### This template is based on EngrXiv preprint template #####
+%###############################################################
+%###############################################################
+
+%% Language and font encodings
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\urlstyle{tt}
+\newcommand{\email}[1]{\href{mailto:#1}{\tt{\nolinkurl{#1}}}}
+\newcommand{\orcid}[1]{ORCID: \href{https://orcid.org/#1}{\tt{\nolinkurl{#1}}}}
+
+\usepackage[sfdefault,lf]{carlito}
+%% The 'lf' option for lining figures
+%% The 'sfdefault' option to make the base font sans serif
+\usepackage[parfill]{parskip}
+\usepackage{float}
+\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\usepackage{authblk}
+\setlength{\headheight}{41pt}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\usepackage[colorinlistoftodos]{todonotes}
+
+%\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{Posted: \today}
+\fancyhead[R]{
+\includegraphics[width=4cm]{gambar/inarxiv_logo.png}
+}
+\pagestyle{plain}
+\title{Aplikasi Penilaian Pelafalan Bahasa Inggris pada Siswa}
+\author[1]{Wasis Haryo Sasoko}
+%\author[2,+]{Derek Author}
+\affil[1]{Universitas Muhammadiyah Bima; \orcid{}}
+\affil[*]{Corresponding author: \email{yokowasis@gmail.com}}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\input{abstract}
+
+\input{pendahuluan}
+
+\bibliographystyle{apalike-oadoi}
+\bibliography{biblio}
+
+\end{document}
